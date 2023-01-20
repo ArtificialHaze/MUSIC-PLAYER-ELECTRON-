@@ -1,0 +1,60 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #222345;
+  color: #fff;
+  font-family: monospace, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 40px auto;
+}
+
+h1 {
+  font-weight: bold;
+}
+
+.title {
+  margin-top: 10px;
+}
+
+.desc {
+  margin-top: 20px;
+}
+
+#file {
+  border: none;
+  outline: none;
+  font-size: 16px;
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  color: #222345;
+  background-color: sandybrown;
+  transition: hover 250ms ease-in-out;
+  animation: pulsate infinite 1000ms linear;
+}
+
+#file:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+@keyframes pulsate {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
